@@ -129,5 +129,13 @@ across the world, yet closely connected through the internet.</p>
 		</div>
 	<!-- ###DEVNOTES### the folder public/i/ contains interface assets  -->
 	<!-- ###DEVNOTES### the folder public/a/ contains content assets -->
-
+	<script>
+    		window.addEventListener("DOMContentLoaded", () => {
+        	const player = RufflePlayer.newest();
+        	const container = document.getElementById("ruffle-target");
+        	const ruffle = player.createPlayer();
+        	container.parentNode.replaceChild(ruffle, container);
+        	ruffle.load("files/ccbanner.swf");
+    	});
+</script>
 </body></html>
