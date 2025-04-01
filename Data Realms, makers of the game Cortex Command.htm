@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+		<title>Data Realms, makers of the game Cortex Command</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" media="all" href="files/screen.css">	
+		<!-- ###DEVNOTES### Ruffle + configuration  -->	
+		<script>
+			window.RufflePlayer = window.RufflePlayer || {};window.RufflePlayer.config = {"autoplay": "on","unmuteOverlay": "hidden","splashScreen": false, "contextMenu": "off"}
+		</script>
+		<script type="text/javascript" src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+		<!-- ###DEVNOTES### jQuery + rss -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="files/rss.js"></script>
+		<!-- ###DEVNOTES### php to pull 2 different random gif animations for the center display  -->
+			</head>
+	<!-- ###DEVNOTES### the class in the body tag is used to hilite the current page link in 'topnav'  -->
+	<!-- ###DEVNOTES### use our_games, dev_log, wiki, fan_forums and contact for the other main pages  -->	
+	<body class="home">
+	<!-- ###DEVNOTES### main page header with logo and site navigation-->
+		<div id="header">
+			<div id="title">
+				<h1>DataRealms - Cortex command</h1>
+				<ul class="topnav">
+			    	<li><a href="http://www.datarealms.com/" id="home">Home</a></li>
+			        <li><a href="http://www.datarealms.com/games.htm" id="our_games">Our games</a></li>
+			        <li><a href="http://www.datarealms.com/devlog/" id="dev_log">Dev log</a></li>
+			        <li><a href="http://www.datarealms.com/wiki/" id="wiki">Wiki</a></li>
+					<li><a href="http://www.datarealms.com/forum/" id="fan_forums">Fan forums</a></li>
+			        <li><a href="mailto:contact@datarealms.com" id="contact">Contact</a></li>
+			  	</ul>
+				<div class="clear"></div>	
+			</div>		 
+		</div>		
+
+	<!-- ###DEVNOTES### the section with the landscape tile, flash piece and gif animations -->		
+		<div id="primaryContent">
+			<div class="flashlogo">
+				<div class="moduletable">
+					<object id="noflash"><!-- https://cors-anywhere.herokuapp.com/ -->
+						<embed src="https://cors-anywhere.herokuapp.com/https://s3.amazonaws.com/DRLMainStatic/public/a/ccbanner.swf" width="913" height="203" />
+    					</object>
+				</div>
+				<div id="feature">
+	<!-- ###DEVNOTES### use the php method in the header to place 2 random animated gifs  -->					
+					<img class="clip" src="files/hitthedirt.gif" alt="Hit the dirt clip">					<img class="clip" src="files/sneakup.gif" alt="Sneakup clip">					<div id="featurebox">
+						<div id="featuretext">Remote control bodies and machines to 
+harvest gold and beat your competitors! 2D sidescrolling pixel graphics 
+with an extremely detailed physics simulation make for a mix of 
+nostalgia and surprising gameplay.</div>
+					  <p id="learnmore_btn"><a href="http://www.datarealms.com/games.htm">Learn ore...</a></p>
+						<div class="clear"></div>
+					</div>
+					<ul id="featurenav">
+						<li id="download_btn"><a href="http://youtu.be/o6NGBGwtwpk?hd=1" target="_blank">VIEW TRAILER - Juicy gameplay action</a></li>
+						<li id="buy_btn"><a href="http://www.datarealms.com/games.htm#disclaimer">BUY NOW - All future versions, 100% DRM-free</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	<!-- ###DEVNOTES### the section containing the welcome and devlog panels -->
+		<div id="secondaryContent">
+			<div id="welcome_box">
+				<div class="prop"></div>
+				<div id="welcome_text">
+					<h2>Welcome</h2>
+					<p class="tagline">to Data Realms, makers of Cortex Command!</p> 
+					<p>We are a small independent game development studio comprised of a
+ handful of passionate and talented individuals physically scattered 
+across the world, yet closely connected through the internet.</p>
+					<p>We make the games that we want to make, and publish them on our own terms. Please take a look at our <a href="http://www.datarealms.com/games.htm">current projects</a>; we hope you like what you'll find!</p>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			<div id="devlog_box">
+				<div class="prop"></div>
+				<div id="devlog_text">
+					<div id="devlog_title">
+						<h2>Dev log...</h2>	
+						<div id="devlog_rss"><a href="http://feeds.feedburner.com/datarealms/">GET RSS</a><a href="http://feeds.feedburner.com/datarealms/"><img src="files/rss.gif"></a></div>
+					</div>
+<!-- p3lbox, you fail
+
+					<p class="tagline">Cortex Command - Game of the Month!</p>
+					<p>April 5th, 2008 - We are proud to report that Cortex Command was chosen to be the inaugural game on <a href="http://www.IndieGames.com">IndieGames.com</a>’s new <a href="http://www.indiegames.com/blog/2008/04/indiegamescom_presents_game_of.html">Game of the Month feature</a>! Head over to the <a href="http://www.indiegames.com/gameofthemonth/">feature page</a> for some juicy new concept art and explanations of the game’s setting and story. In other news: Sorry there has been a bit of a gap in updates and activity. There were a series of IRL distractions, but we are back on track and the exciting times will definitely be picking up again
+-->
+
+
+                <noscript>
+                    <div id="noJsMessage">
+                        <p>
+                            It appears that JavaScript is disabled in your web browser. Our site relies on JavaScript to provide an enhanced user experience and interactive content. Without JavaScript enabled, some features on our Dev Log and other sections may not work correctly.
+                        </p>
+                        <p>
+                            Please enable JavaScript in your browser settings. For detailed instructions on how to enable JavaScript, please visit 
+                            <a href="https://www.enable-javascript.com/" target="_blank">Enable JavaScript</a>.
+                        </p>
+                        <p>
+                            Thank you for your understanding.
+                        </p>
+                    </div>
+                </noscript><br>
+					<span class="rightalign"><a href="http://www.datarealms.com/devlog/">MORE</a></span><p></p>				
+
+				</div>
+			</div>
+			
+			<div id="footnav">
+				<ul>
+			    	<li><a href="http://www.datarealms.com/">Home</a> |</li>
+			        <li><a href="http://www.datarealms.com/games.htm">Our games</a> |</li>
+			        <li><a href="http://www.datarealms.com/devlog/">Dev Log</a> |</li>
+			        <li><a href="http://www.datarealms.com/wiki/">Wiki</a> |</li>
+					<li><a href="http://www.datarealms.com/forum/">Fan forums</a> |</li>
+			        <li><a href="mailto:contact@datarealms.com">Contact</a></li>
+				</ul>
+				<div class="clear"></div>	
+			</div>
+	        <div class="footer">
+	        	<div class="left_footer">
+					<p>Copyright © 2025 <img src="files/footer_datarealms.gif" alt="Data Realms">. All rights reserved.</p>
+	        	</div>
+	        	<div class="right_footer">
+					<p>Visual Design by <a href="http://www.fullyillustrated.com/" target="_blank">Fully Illustrated</a></p>
+				</div>
+		    </div>
+
+		</div>
+	<!-- ###DEVNOTES### the folder public/i/ contains interface assets  -->
+	<!-- ###DEVNOTES### the folder public/a/ contains content assets -->
+
+</body></html>
