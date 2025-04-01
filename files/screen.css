@@ -1,0 +1,478 @@
+* {
+	text-align:left;
+}
+
+body {
+	margin:0;
+	padding:0;
+	color:#491E19;
+	font-size:100%;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	background: #ffffff;
+	}
+		
+#header {
+	height:78px;	
+	background: #4a1f1a url(https://s3.amazonaws.com/DRLMainStatic/public/i/header.jpg) repeat-x;	
+}
+
+#title {
+	display:block;
+	width:914px;
+	height:78px;
+	position: relative;
+	left:50%; /* puts left edge in the middle */
+	margin-left : -457px; /* change to equal half the length of your centered table */
+	/*border:#000fff solid 2px;*/
+}
+
+h1 {
+	text-align:center;
+	display:inline;
+	float:left;
+	height: 53px;
+	width:300px;
+	padding:0;
+	margin:0;
+	font-size:1.5em;
+	color:#000000;
+	text-indent:-9000px;
+	background-image: url(https://s3.amazonaws.com/DRLMainStatic/public/i/title.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* horizontal main menu navigation --------------- */
+ul.topnav {
+	list-style-type:none;
+	padding:0;
+  	display:block;
+	position:relative;
+	margin: 0 0 0 300px;
+	padding: 0;
+	width: 610px;
+	
+}
+
+ul.topnav li{
+	display:block;
+	float:left;
+	text-align: left;
+	margin-left:0px;
+	margin-right:0px;
+	line-height:73px;
+	height:73px;
+	width:100px;
+	background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/navbar.jpg) no-repeat left;
+}
+
+ul.topnav li a {
+	text-align:center;
+	display: block;
+	padding:0;
+	line-height:73px;
+	height:73px;
+	width:100px;	
+  	text-indent:-9000px;
+}
+
+/* ROLLOVER EFFECTS */
+ul.topnav li a#home { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_home.gif) no-repeat bottom left; }
+ul.topnav li a#home:hover { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_home.gif) no-repeat bottom right; }
+ul.topnav li a#our_games { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_our_games.gif) no-repeat bottom left; }
+ul.topnav li a#our_games:hover { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_our_games.gif) no-repeat bottom right; }
+ul.topnav li a#dev_log { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_dev_log.gif) no-repeat bottom left; }
+ul.topnav li a#dev_log:hover { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_dev_log.gif) no-repeat bottom right; }
+ul.topnav li a#wiki { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_wiki.gif) no-repeat bottom left; }
+ul.topnav li a#wiki:hover { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_wiki.gif) no-repeat bottom right; }
+ul.topnav li a#fan_forums { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_fan_forums.gif) no-repeat bottom left; }
+ul.topnav li a#fan_forums:hover { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_fan_forums.gif) no-repeat bottom right; }
+ul.topnav li a#contact { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_contact.gif) no-repeat bottom left; }
+ul.topnav li a#contact:hover { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_contact.gif) no-repeat bottom right; }
+/* FIREFOX DOTTED LINE FIX */
+#home a:active {  outline: none; }
+#our_games a:active {  outline: none; }
+#dev_log a:active {  outline: none; }
+#wiki a:active {  outline: none; }
+#fan_forums a:active {  outline: none; }
+#contact a:active {  outline: none; }
+
+/* DISPLAY CURRENT PAGE - uses the selector stored in the body tag */
+body.home ul.topnav a#home { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_home.gif) no-repeat bottom right; } 
+body.our_games ul.topnav a#our_games { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_our_games.gif) no-repeat bottom right; } 
+body.dev_log ul.topnav a#dev_log { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_dev_log.gif) no-repeat bottom right; } 
+body.wiki ul.topnav a#wiki { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_wiki.gif) no-repeat bottom right; } 
+body.fan_forums ul.topnav a#fan_forums { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_fan_forums.gif) no-repeat bottom right; } 
+body.contact ul.topnav a#contact { background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/tn_contact.gif) no-repeat bottom right; } 
+
+/* PRIMARY PANEL - Flash and download controls --- */
+#primaryContent {
+	height:390px;
+	padding:0;
+	margin:0;
+	background: #65a5e6 url(https://s3.amazonaws.com/DRLMainStatic/public/i/tile.jpg) repeat-x;	
+}
+
+.flashlogo {
+	display:block;
+	padding:18px 0 0 0;
+	height:352px;
+	width:913px;
+	margin:auto;
+	background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/logo.gif) no-repeat bottom;
+}
+
+#feature {
+	display:block;
+}
+
+#feature .clip {
+	margin:18px 0 0 20px;
+	*margin-top: 20px; 
+	float:left;
+}
+
+#featurebox {
+	margin:60px 0 0 20px;
+	height:70px;
+	font-size: 8pt;
+	color:#AC5D56;
+	float:left;	
+	width:350px;
+	/*border:#fff solid 1px;*/
+}
+
+#featuretext {
+	height:48px;
+}
+
+#featurenav {
+	list-style-type:none;
+	padding:0;
+	margin:18px 0 0 20px;
+	*margin-top: 20px;
+	height:110px;
+	width:240px;
+	float:left;	
+}
+
+/* button rollovers */
+#learnmore_btn {
+	padding:0;
+	margin:0;
+	width:90px;
+	background:#481d17 url(https://s3.amazonaws.com/DRLMainStatic/public/i/btn_learn.gif) no-repeat left;	
+}
+
+#learnmore_btn a{
+	color:#fff;
+	border:none;
+	display:block;
+	width:90px;
+	height:19px;
+	line-height:19px;
+  	text-indent:-9000px;
+	background:#481d17 url(https://s3.amazonaws.com/DRLMainStatic/public/i/btn_learn.gif) no-repeat left;
+}
+
+#learnmore_btn a:hover {
+	background-position: right;
+	background-repeat: no-repeat;
+	background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/btn_learn.gif) no-repeat right;	
+}
+#learnmore_btn a:active {  outline: none; }
+
+#download_btn {
+	width:239px;
+	background:#481d17 url(https://s3.amazonaws.com/DRLMainStatic/public/i/btn_download.gif) no-repeat left;	
+}
+
+#download_btn a{
+	color:#fff;
+	border:none;
+	display:block;
+	width:239px;
+	height:50px;
+	line-height:50px;
+  	text-indent:-9000px;
+	background:#481d17 url(https://s3.amazonaws.com/DRLMainStatic/public/i/btn_download.gif) no-repeat left;
+}
+
+#download_btn a:hover {
+	background-position: right;
+	background-repeat: no-repeat;
+	background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/btn_download.gif) no-repeat right;	
+}
+#download_btn a:active {  outline: none; }
+
+#buy_btn {
+	margin-top:10px;
+	width:239px;
+	background:#f8c744 url(https://s3.amazonaws.com/DRLMainStatic/public/i/btn_buy.gif) no-repeat left;	
+}
+
+#buy_btn a{
+	color:#fff;
+	border:none;	
+	display:block;
+	width:239px;
+	height:50px;
+	line-height:50px;
+  	text-indent:-9000px;
+	background:#481d17 url(https://s3.amazonaws.com/DRLMainStatic/public/i/btn_buy.gif) no-repeat left;
+}
+
+
+
+#buy_btn a:hover {
+	background-position: right;
+	background-repeat: no-repeat;
+	background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/btn_buy.gif) no-repeat right;	
+}
+
+#buy_btn a:active {  outline: none; }
+
+#noflash {
+	display:block;
+	width:913px;
+	height:203px;
+	background: url(https://s3.amazonaws.com/DRLMainStatic/public/i/noflash.jpg) no-repeat;
+}
+
+#noflash a {
+	display:block;
+	padding:10px;
+}
+
+/* SECONDARY PANEL - Welcome and devlog ---------- */
+#secondaryContent {
+	font-size:8pt;
+	color:#ac5d56;	
+	display:block;
+	padding:0;
+	width:912px;
+	margin:auto;
+	color:#AC5D56;
+}
+
+/* PAGE content, long form ------------------------------- */
+#page_content {
+	text-align:left;
+	display:block;
+	width:780px;
+	margin:auto;
+	padding: 0;
+}
+
+#image_caption {
+	text-align:center;
+	font-size: 50%;
+}
+
+/* WELCOME section ------------------------------- */
+#welcome_box {
+	padding:0;
+	margin:0;
+	float:left;
+	display:block;
+	width:348px;
+	background:#e9e6e6 url("https://s3.amazonaws.com/DRLMainStatic/public/i/welcome_back.gif") no-repeat;
+}
+
+#welcome_text {
+	margin-left:28px;
+	width:258px;
+}
+
+#welcome_text h2{
+	padding:0;
+	margin:0 0 10px 0;
+	float:left;
+	width:250px;
+	display:block;
+	height:50px;
+  	text-indent:-9000px;	
+}
+
+#welcome_text p {
+	padding-right:10px;
+	margin:5px 0 5px 0;
+}
+
+
+/* DEVLOG BOX CONTENT ---------------------------- */
+#devlog_box {
+	padding:0;
+	margin:0;
+	float:left;
+	display:block;
+	width:560px;
+	background:#fff url("https://s3.amazonaws.com/DRLMainStatic/public/i/devlog_back.gif") no-repeat;	
+}
+
+#devlog_text {
+	margin-left:30px;
+	width:525px;
+}
+
+#devlog_text h2{
+	padding:0;
+	margin:0 0 10px 0;
+	float:left;
+	width:250px;
+	display:block;
+	height:50px;
+  	text-indent:-9000px;	
+}
+
+#devlog_text p {
+	padding:0;
+	margin:5px 0 5px 0;
+}
+
+#devlog_title{
+	padding:0;
+	margin:0 0 10px 0;
+	float:left;
+	width:522px;
+	display:block;
+	height:50px;
+}
+
+#devlog_rss {
+	margin-top:25px;
+	line-height:25px;
+	float:right;
+}
+#devlog_rss A {
+	float:left;
+	display:block;
+	padding:0;
+	color:#000;
+	text-decoration: underline;
+}
+#devlog_rss IMG {
+	border:none;
+	padding:0 0 0 8px;
+}
+
+/* FOOTER NAVIGATION ----------------------------- */
+#footnav {
+	clear:both;
+	padding:1px;
+	margin:0;
+	display:block;
+	position: relative;
+	color:#AC5D56;
+	font-size:8pt;
+	height:30px;
+	line-height:30px;
+	border-bottom:#CDB6B6 solid 1px;
+	border-top:#CDB6B6 solid 1px;	
+}
+
+#footnav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#footnav li {
+	display: block;
+	margin: 0 5px 0 0;
+	padding: 0;
+	float: left;
+	width: auto;
+}
+
+#footnav a, a:link, a:visited {
+	color:#990000;
+	font-weight:normal;
+	text-decoration: none;
+}	
+
+#footnav a:hover, a:active {
+	color:#AC5D56;
+	text-decoration: underline;
+}	
+
+/* FOOTER - containing copyright information ----- */
+.footer {
+     float: left;		 
+     width: 100%;
+	 color: #666666;
+ 	 font-size: 8pt;		 
+}
+.footer A {
+	color: #999999;
+	font-size: 8pt;
+}
+.footer A:HOVER {
+	color: #666666;
+	text-decoration: none;
+}
+
+.left_footer {
+	height:40px;
+    line-height:40px;
+	padding:10px 0 0 0;
+	float: left;
+	width: 50%;
+}
+
+.left_footer P {
+	float:left;
+	padding: 0px 0 0 0;
+	margin: 0px;
+}
+
+.left_footer {
+	padding: 0 0 0 3px;
+	border:none;
+}
+
+.right_footer {
+	height:40px;
+    line-height:40px;
+	float: right;
+	width: 210px;
+	background:url("https://s3.amazonaws.com/DRLMainStatic/public/i/footer_logo.gif") no-repeat right center;
+}
+.right_footer P {
+	padding: 0px;
+	margin: 0px;
+}
+.right_footer A {color: #999999;}
+
+
+/* GENERIC HELPERS ------------------------------- */
+.prop {
+  	height:225px;
+  	float:left;
+  	width:1px;
+}
+
+.clear {
+  clear:both;
+  height:1px;
+  overflow:hidden;
+}
+
+.tagline {
+	padding-right:0px;
+	font-weight:bold;
+	clear:both;
+	display:inline;
+	color:#2a0805;
+}
+
+.rightalign {
+	float:right;
+}
+
+.rightalign A {
+	text-decoration:underline;
+	color:#2A0805;	
+}
