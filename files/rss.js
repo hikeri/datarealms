@@ -58,7 +58,7 @@
             var $title = $('<p class="tagline"></p>');
             
             // Build the link to go through archive.org by encoding the original link
-            var archiveUrl = 'https://web.archive.org/web/' + encodeURIComponent(item.link);
+            var archiveUrl = 'https://web.archive.org/web/20230609011346/' + encodeURIComponent(item.link);
             var $aTitle = $('<a></a>')
                 .attr('href', archiveUrl)
                 .text(item.title);
@@ -78,3 +78,4 @@
     }
 
 })(jQuery);
+
